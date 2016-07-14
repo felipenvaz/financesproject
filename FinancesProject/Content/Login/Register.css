@@ -1,0 +1,28 @@
+﻿#register-index {
+    border-radius: 4px;
+    width: 380px;
+    margin: 260px auto;
+}
+
+    #register-index input[type='text'],
+    #register-index input[type='password'] {
+        height: 18px;
+        width: 200px;
+        border-radius: 4px;
+        font-family: monospace;
+    }
+
+#register-form label {
+    display: inline-block;
+    width: 170px;
+}
+
+#register-form .button-default {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.register-input-div {
+    margin: 10px auto;
+    display: table;
+}

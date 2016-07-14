@@ -1,0 +1,24 @@
+﻿@model FinancesProject.Models.LoginModel
+@{
+    ViewBag.Title = "Login - FinancesManager";
+}
+<div id="login-index">
+    @using (Html.BeginForm("MakeLogin", "Login", FormMethod.Post, new { id = "login-form" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="login-input-div">
+            @Html.LabelFor(m => m.UserName, new { @class="label-default" })
+            @Html.TextBoxFor(m => m.UserName)
+        </div>  
+        <div class="login-input-div">
+            @Html.LabelFor(m => m.Password, new { @class="label-default" })
+            @Html.PasswordFor(m => m.Password)
+        </div> 
+        @Html.ValidationSummary()
+        <div class="login-input-div">
+            <input type="submit" value="Login" class="button-default"/>
+            @Html.ActionLink("Register", "Register", "Login", null, new { @class="button-default" })
+        </div> 
+    }
+</div>

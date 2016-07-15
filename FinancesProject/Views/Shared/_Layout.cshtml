@@ -16,10 +16,12 @@
         </ul>
 
     </nav>
+    <div id="warning" class="warning-div">Account successfully created!</div>
     <div>
         @RenderBody()
     </div>
     @Scripts.Render("~/bundles/jquery")
+    <script src="@Url.Content("~/Scripts/Shared/Site.js")"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

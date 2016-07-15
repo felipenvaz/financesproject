@@ -33,6 +33,7 @@ namespace FinancesProject.Controllers
         [HttpGet]
         public ActionResult MakeLogin()
         {
+            ViewBag.Warning = TempData["Warning"];
             return View();
         }
 
@@ -86,6 +87,7 @@ namespace FinancesProject.Controllers
                     });
                     context.SaveChanges();
                 }
+                TempData["Warning"] = "Account successfully created";
                 return RedirectToAction("MakeLogin");
             }
             return View(model);

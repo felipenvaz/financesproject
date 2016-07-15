@@ -1,3 +1,28 @@
-﻿@{
+﻿@using FinancesProject.Models
+@{
     ViewBag.Title = "Finances - FinancesManager";
 }
+<div class="finances-list-main">
+    @Html.ActionLink("Add Movimentation", "AddFinanceMovimentation", "Finances");
+    <table>
+        <thead>
+            <tr>
+                <th>C/D</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (FinanceMovimentation movimentation in ViewBag.Movimentations)
+            { 
+            
+                <tr>
+                    <td>
+                        <div class="@(movimentation.Type == EMovimentationType.Credit ? "positive-movimentation" : "negative-movimentation")"></div>
+                    </td>
+                    <td>$@movimentation.Value</td>
+                </tr>
+            
+            }
+        </tbody>
+    </table>
+</div>

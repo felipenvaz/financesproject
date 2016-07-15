@@ -144,6 +144,8 @@
     <Compile Include="Util\PasswordUtil.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Finances\FinancesIndex.css" />
+    <Content Include="Content\Images\arrows_green_red.png" />
     <Content Include="Content\Login\Register.css" />
     <Content Include="Content\Login\LoginIndex.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -217,6 +219,7 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\Shared\Site.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

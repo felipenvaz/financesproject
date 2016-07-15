@@ -1,0 +1,25 @@
+﻿.finances-list-main {
+    border-radius: 4px;
+}
+
+.positive-movimentation, .negative-movimentation {
+    background-image: url(../Images/arrows_green_red.png);
+    height: 20px;
+    width: 16px;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    margin: 0 auto;
+}
+
+.positive-movimentation {
+    background-position-x: 1px;
+}
+
+.negative-movimentation {
+    background-position-x: -15px;
+}
+
+.finances-list-main table td, .finances-list-main table th{
+    border: darkblue solid 1px;
+    padding: 5px;
+}

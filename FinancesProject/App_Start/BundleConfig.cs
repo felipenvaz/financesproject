@@ -25,7 +25,8 @@ namespace FinancesProject
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css", 
                 "~/Content/login/loginIndex.css",
-                "~/Content/login/register.css"));
+                "~/Content/login/register.css",
+                "~/Content/finances/financesIndex.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",

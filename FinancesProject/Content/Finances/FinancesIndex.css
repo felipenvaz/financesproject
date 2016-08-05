@@ -1,5 +1,7 @@
 ﻿.finances-list-main {
     border-radius: 4px;
+    margin: 0 auto;
+    width: 320px;
 }
 
 .positive-movimentation, .negative-movimentation {

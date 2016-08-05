@@ -22,7 +22,7 @@ namespace FinancesProject.Controllers
                 if (Session[Constants.CurrentUser] == null) {
                     using (var context = new FinancesManagerContext())
                     {
-                        Session[Constants.CurrentUser] = context.Users.First(u => u.Name == FormsAuthentication.FormsCookieName);
+                        Session[Constants.CurrentUser] = context.Users.FirstOrDefault(u => u.Name == this.User.Identity.Name);
                     }
                 }
                 return new RedirectResult(FormsAuthentication.DefaultUrl);
